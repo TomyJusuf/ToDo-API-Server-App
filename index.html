@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="title">TODO APP</h1>
+    <div class="box">
+      <label for="todoTask">TASK:</label>
+      <div class="input_area">
+        <input
+          class="inputTodoTask"
+          type="text"
+          id="todoTask"
+          name="todoTask"
+          placeholder="Enter Your Task"
+          required
+        />
+        <button class="addBtn" type="button" onclick="showData()">Add</button>
+        <button class="deleteBtn" type="button" onclick="deleteAllTask()">
+          Delete
+        </button>
+      </div>
+    </div>
+    <!-- Update box -->
+    <div class="updatebox"></div>
+
+    <!-- Show box -->
+    <div class="showBox"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

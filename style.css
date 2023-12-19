@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  background: rgb(240, 240, 238);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+h1 {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+}
+.title {
+  margin-top: 125px;
+  position: relative;
+  width: 450px;
+  font-size: 4.5rem;
+  color: rgb(234, 153, 153);
+  border-bottom: 10px dotted rgb(234, 153, 153);
+}
+.box {
+  margin-top: 30px;
+  width: 1050px;
+  height: 70px;
+  background: rgb(195, 188, 188);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.todoTask {
+  width: 150px;
+  height: 50px;
+
+  text-align: center;
+}
+.input_area {
+  width: 850px !important;
+  display: flex;
+  justify-content: space-between;
+}
+.inputTodoTask {
+  width: 530px !important;
+  height: 50px;
+  border: 2px black solid;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 5px !important;
+}
+
+.input_area > button {
+  width: 150px;
+  height: 58px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+}
+.addBtn {
+  background: rgb(45, 230, 45);
+  border: 2px solid black;
+}
+.deleteBtn {
+  background: rgb(235, 20, 74);
+  border: 2px solid black;
+}
+label {
+  font-size: 35px;
+  font-weight: bold;
+}
+input {
+  width: 310px;
+  height: 30px;
+}
+.input_area {
+  width: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input::placeholder {
+  text-align: center;
+  font-size: 18px;
+}
+
+button {
+  width: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.showBox {
+  margin-top: 25px;
+  width: 1060px;
+  /* background: blue; */
+}
+.showBox_title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.showBox_title > span {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 5px 15px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.showBox_title > h1 {
+  text-align: start;
+  width: 77% !important;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.showBox_title > button {
+  padding-top: 10px;
+  margin-right: 7px;
+}
+
+hr {
+  margin-top: 15px;
+  height: 1px;
+  width: 100%;
+  background: #8e8e8e;
+}
+
+.updatebox {
+  font-family: sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  margin: 10% 0;
+  width: 1050px;
+  background: #fff;
+  height: 550px;
+  border-radius: 15px;
+  box-shadow: rgba(89, 86, 86, 0.57) 8px 7px 15px;
+  display: none;
+}
+.closeBar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 50px;
+  margin-top: 30px;
+  background: rgb(255, 111, 0);
+  width: 100%;
+  padding: 3px;
+}
+#closeBtn {
+  border: #ffffff solid 4px;
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.material-symbols-outlined {
+  font-size: 1.5em;
+
+  /* font-weight: bold; */
+}
+.titleUpdateBox {
+  width: 100%;
+  background: rgb(248, 155, 155);
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+  align-self: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+.updatebox > h1 {
+  width: 100%;
+
+  font-weight: bold;
+  text-align: start;
+  font-size: 1.5rem;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  margin-left: 140px;
+}
+
+.updatebox > button {
+  width: 250px;
+  height: 50px;
+  margin: 30px 0 30px 50%;
+  cursor: pointer;
+  border: none;
+  background: rgb(56, 125, 210);
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: rgba(89, 86, 86, 0.57) 5px 4px 7px;
+}
+.updatebox > button:active {
+  scale: 0.9;
+  box-shadow: rgba(89, 86, 86, 0.57) 5px 7px 5px;
+}
+
+.addNewData {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#newTaskValue {
+  min-width: 450px;
+  height: 50px;
+}
+#newTaskStatus {
+  width: 250px;
+  height: 50px;
+}
+input {
+  border: #867c7c solid 2px;
+}
+#newTaskValue,
+#newTaskStatus,
+input {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+}
